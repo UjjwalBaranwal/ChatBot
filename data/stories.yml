@@ -1,0 +1,63 @@
+version: "2.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+  - story: askingcollege
+    steps:
+      - intent: common_question
+      - action: utter_anscommon
+  - story: asking_more_about_college
+    steps:
+      - intent: more_about_college
+      - action: utter_about_college
+  - story: asking_about_club
+    steps:
+      - intent: club
+      - action: utter_club
+  - story: asking_benefit_of_the_club
+    steps:
+      - intent: benfit_of_the_club
+      - action: utter_benfit_club
+  - story: campus_life
+    steps:
+      - intent: explore_campus
+      - action: utter_explore_campus
+
+  - story: cafetarea
+    steps:
+      - intent: cafetarea
+      - action: utter_cafetarea
+  - story: about_dwesis
+    steps:
+      - intent: dwesis_canteen
+      - action: utter_about_dwesis
+
+  - story: location_of_dwesis
+    steps:
+      - intent: dwesis_location
+      - action: utter_location_dwesis

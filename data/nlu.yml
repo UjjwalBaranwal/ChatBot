@@ -1,0 +1,228 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: common_question
+    examples: |
+      - What is the name of the college
+      - Where is MNNIT college present?
+      - Tell me something about MNNIT
+      - Tell me about MNNIT
+      - What is MNNIT?
+      - Name a college present in Allahabad
+      - What is full form of MNNIT?
+  - intent: more_about_college
+    examples: |
+      - MNNIT 
+      - mnnit college
+      - Inform about MNNIT college
+      - inform about mnnit college
+      - tell me something more about MNNIT Allahabad
+      - Is MNNIT Allahabad a good college?
+      - Is MNNIT a good college for engineering?
+      - When MNNIT college is established?
+      - How old is the MNNIT Allahabad?
+      - Is MNNIT a Regional Engineering Colleges of India?
+      - Is MNNIT a Government or Private college?
+      - What are the college's core values and mission?
+      - Can you tell me about the MNNIT's history and founding?
+      - Can you tell me about the mnnit's history and founding?
+      - Share some facts and statistics about the college
+      - Share some facts and statistics about the MNNIT
+      - Share some statistics about the mnnit
+
+  - intent: club
+    examples: |
+      - What are clubs present in MNNIT?
+      - Which type of clubs are present in college?
+      - What are different activities happen in MNNIT?
+      - Mention the name of clubs of MNNIT.
+      - Tell the name of clubs of MNNIT.
+      - clubs of mnnit college
+      - Which type of clubs are present in MNNIT college?
+      - Tell me about the clubs in the college
+      - Tell me about the clubs in the mnnit
+      - Tell me extra co-curricular activity of the college
+      - Tell me extra co-curricular activity of the MNNIT
+
+  - intent: benfit_of_the_club
+    examples: |
+      - What are the facility of exploring different fields in MNNIT?
+      - What are the benefits of joining club ?
+      - What are advantages of joining different club?
+      - Is there any benefit of joining different club?
+      - Is there any advantage of participating different club?
+      - Is it worth to work in different clubs of MNNIT? 
+      - What are the reasons for joining a club?
+      - Why is it important to join clubs in college?
+      - Should you join clubs in college?
+      - What are the benefits of joining clubs at your college?
+      - Can you tell me why I should join a club on campus?
+      - What advantages do college clubs offer to students?
+      - How can joining a club enhance my college experience?
+      - Share some reasons why I should consider joining a student organization.
+      - What opportunities do clubs provide for personal development?
+      - Tell me more about the positive impacts of participating in clubs.
+      - How can joining a club help me make friends and connections?
+      - Explain the social and networking benefits of college clubs.
+      - What are the advantages of being part of a club in terms of career development?
+
+  - intent: explore_campus
+    examples: |
+      - Tell me someting about campus of MNNIT college
+      - How the campus of MNNIT looks like?
+      - Is campus life of mnnit college good?
+      - How was your life at MNNIT?
+      - Is campus of MNNIT colloge beautiful?
+      - What is the campus area of MNNIT college?
+      - How can I explore your college campus?
+      - Tell me about campus tours at your college.
+      - What are the options for visiting your college?
+      - Can I schedule a campus visit?
+      - Share information about open house events at your college.
+      - How can I get a feel for the college before applying?
+      - What resources are available for prospective students to explore your college?
+      - Is there a virtual tour of your college available?
+      - Are there any upcoming college events for visitors?
+      - Tell me about the admissions office and how to contact them for a visit.
+
+  - intent: cafetarea
+    examples: |
+      - Is there any good canteen present in campus area?
+      - Can you tell me about canteen and shops present in campus area?
+      - Which restaurants are present near MNNIT Allahabad?
+      - Is stationary shop are present in campus area?
+      - Can we order food from near by restaurants in mnnit college ?
+      - Tell me about the college cafeteria.
+      - What dining options are available on campus?
+      - Can you provide information about meal plans at the college?
+      - How does the cafeteria accommodate dietary restrictions?
+      - Are there vegetarian or vegan options in the cafeteria?
+      - What are the opening hours of the college cafeteria?
+      - Is there a food court on campus?
+      - Are there any special events or promotions in the cafeteria?
+      - Can you share the menu options and prices in the cafeteria?
+      - Tell me about the quality of food in the college cafeteria.
+  - intent: dwesis_canteen
+    examples: |
+      - Tell me more about Dwesis canteen.
+      - What's on the menu at Dwesis canteen?
+      - Can you share the operating hours of Dwesis canteen?
+      - Are there any special dishes at Dwesis canteen?
+      - What's the pricing like at Dwesis canteen?
+      - Tell me about the ambiance and seating at Dwesis canteen.
+      - Is there a student discount available at Dwesis canteen?
+      - What are the popular food items at Dwesis canteen?
+      - Share some reviews or recommendations for Dwesis canteen.
+      - How can I provide feedback about my experience at Dwesis canteen?
+      - What's the specialty of Dwesis Canteen?
+      - What type of cuisine does Dwesis Canteen primarily serve?
+      - Can you share the price range of dishes at Dwesis Canteen?
+      - Are there any cultural or themed nights at Dwesis Canteen, like "Mexican Mondays" or "Asian Fusion Fridays"?
+      - Tell me about the dessert options at Dwesis Canteen.
+      - Is there outdoor seating available at Dwesis Canteen?
+      - Are there any loyalty programs or rewards for frequent visitors to Dwesis Canteen?
+      - How do I place an order or reserve a table at Dwesis Canteen?
+      - Can you provide information about the staff and chefs at Dwesis Canteen?
+      - Do they offer catering services for events or gatherings?
+      - Are there any special considerations for allergen information at Dwesis Canteen?
+  - intent: dwesis_location
+    examples: |
+      - Where is the college dwesis located?
+      - Can you tell me the address of the dwesis on campus?
+      - How do I find the Mr. Dwesis's location?
+      - Where can I grab a meal on campus?
+      - Give me directions to the college Dwesis.
+      - Is there a map to the dwesis?
+      - What building or area is the dwesis situated in?
+      - I'm new here, where can I find the dwesis?
+      - Tell me how to get to the nearest dwesis.
+      - Can you guide me to the dwesis's location on campus?
